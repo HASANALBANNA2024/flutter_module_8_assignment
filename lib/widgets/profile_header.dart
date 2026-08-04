@@ -31,11 +31,15 @@ class ProfileHeader extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 4.0),
           child: Text(
             bio,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+            style: TextStyle(
+              fontSize: 10.5,
+              color: Colors.grey.shade700,
+              height: 1.3,
+            ),
           ),
         ),
       ],

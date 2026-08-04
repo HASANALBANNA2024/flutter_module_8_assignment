@@ -30,7 +30,7 @@ class ProfileScreen extends StatelessWidget {
                   // --- TOP PROFILE CONTAINER ---
                   Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0,
+                      horizontal: 18.0,
                       vertical: 24.0,
                     ),
                     decoration: BoxDecoration(
@@ -50,22 +50,24 @@ class ProfileScreen extends StatelessWidget {
                         const SizedBox(height: 16),
                         Divider(color: Colors.grey.shade200, height: 1),
                         const SizedBox(height: 16),
-
-                        // Left-aligned contact info
-                        const Padding(
-                          padding: EdgeInsets.only(left: 16.0),
-                          child: Column(
-                            children: [
-                              ContactInfoRow(
-                                icon: Icons.email_outlined,
-                                text: profileEmail,
-                              ),
-                              SizedBox(height: 8),
-                              ContactInfoRow(
-                                icon: Icons.phone_outlined,
-                                text: profilePhone,
-                              ),
-                            ],
+                        const Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 12.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                ContactInfoRow(
+                                  icon: Icons.email,
+                                  text: profileEmail,
+                                ),
+                                SizedBox(height: 8),
+                                ContactInfoRow(
+                                  icon: Icons.phone,
+                                  text: profilePhone,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(height: 16),
