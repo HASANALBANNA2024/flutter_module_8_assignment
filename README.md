@@ -40,8 +40,9 @@ lib/
 │   └── interest_model.dart        # Data model for interest cards
 ├── screens/
 │   └── profile_screen.dart        # Main layout screen
-└── widgets/
-    ├── action_buttons.dart        # Follow and Message buttons
-    ├── contact_info_row.dart      # Reusable contact row (email/phone)
-    ├── interest_card.dart         # Card widget for user interests
-    └── profile_header.dart        # Top profile section (avatar, name, bio)
+├── widgets/
+│   ├── action_buttons.dart        # Follow and Message buttons
+│   ├── contact_info_row.dart      # Reusable contact row (email/phone)
+│   ├── interest_card.dart         # Card widget for user interests
+│   └── profile_header.dart        # Top profile section (avatar, name, bio)
+└── main.dart                      # Application entry point
